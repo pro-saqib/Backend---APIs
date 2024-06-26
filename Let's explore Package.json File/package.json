@@ -1,0 +1,26 @@
+{
+	"name": "fcc-learn-npm-package-json",
+	"author": "Saqib Hayat", //add author
+	"description": "A project that does something awesome", // description
+	"keywords": [ "descriptive", "freecodecamp", "words"], // keywords
+	"license": "MIT", //license
+	"version": "1.2.0", //version
+	"dependencies": {
+		"express": "4.14.0" 
+        // "package": "MAJOR.MINOR.PATCH" PATCHes are bug fixes and MINORs add
+                                        // new features but neither of them break 
+                                        // what worked before. Finally, MAJORs add 
+                                        // changes that won’t work with earlier versions.
+        //"package": "~1.2.8", allow the latest 1.2.x version.
+        //"package": "^1.2.8" allow the latest 1.x.x version.
+          
+	},
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/freeCodeCamp/boilerplate-npm.git"
+	}
+}
